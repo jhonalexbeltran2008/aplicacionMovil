@@ -9,13 +9,12 @@ type Props = {
 
 const TarjetaEstudio = ({ titulo, institucion, Year, enCurso }: Props) => {
   return (
-    // PISTA: Aplica un estilo condicional si enCurso es verdadero
     <View
       style={[estilos.tarjeta, enCurso ? estilos.enCurso : estilos.finalizado]}
     >
       <Text style={estilos.titulo}>{titulo}</Text>
 
-      {/* PISTA: Si está en curso, muestra un texto indicativo */}
+      {/* Cápsula morada con texto blanco */}
       {enCurso && <Text style={estilos.badge}>En Curso</Text>}
 
       <Text style={estilos.subtitulo}>{institucion}</Text>
@@ -29,9 +28,20 @@ export default TarjetaEstudio;
 const estilos = StyleSheet.create({
   tarjeta: { padding: 16, borderRadius: 10, marginVertical: 8, borderWidth: 1 },
   finalizado: { backgroundColor: "#ffffff", borderColor: "#ccc" },
-  enCurso: { backgroundColor: "#eef2ff", borderColor: "#00ff73" },
+  enCurso: { backgroundColor: "#eef2ff", borderColor: "#7c3aed" },
   titulo: { fontSize: 16, fontWeight: "bold" },
   subtitulo: { fontSize: 14, color: "#555" },
   Year: { fontSize: 12, color: "#888" },
-  badge: { color: "#6366f1", fontWeight: "bold", fontSize: 12 },
+  badge: {
+    alignSelf: "flex-start",
+    backgroundColor: "#7c3aed",
+    color: "#ffffff",
+    fontWeight: "bold",
+    fontSize: 12,
+    paddingHorizontal: 10,
+    paddingVertical: 3,
+    borderRadius: 999,
+    overflow: "hidden",
+    marginVertical: 4,
+  },
 });
