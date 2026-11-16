@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 type Props = {
   titulo: string;
   institucion: string;
-  Year: number;
+  Year: string;
   enCurso: boolean;
 };
 

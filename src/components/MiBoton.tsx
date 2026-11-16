@@ -38,7 +38,7 @@ const stylesBoton = StyleSheet.create({
     marginRight: 5,
   },
   texto: {
-    color: "#d4d6c6",
+    color: "#ffffff",
     fontSize: 14,
     fontWeight: "600",
   },
