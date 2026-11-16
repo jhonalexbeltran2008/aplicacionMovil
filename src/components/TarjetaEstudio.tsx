@@ -3,11 +3,11 @@ import { StyleSheet, Text, View } from "react-native";
 type Props = {
   titulo: string;
   institucion: string;
-  anio: number;
+  Year: number;
   enCurso: boolean;
 };
 
-const TarjetaEstudio = ({ titulo, institucion, anio, enCurso }: Props) => {
+const TarjetaEstudio = ({ titulo, institucion, Year, enCurso }: Props) => {
   return (
     // PISTA: Aplica un estilo condicional si enCurso es verdadero
     <View
@@ -19,7 +19,7 @@ const TarjetaEstudio = ({ titulo, institucion, anio, enCurso }: Props) => {
       {enCurso && <Text style={estilos.badge}>En Curso</Text>}
 
       <Text style={estilos.subtitulo}>{institucion}</Text>
-      <Text style={estilos.anio}>{anio}</Text>
+      <Text style={estilos.Year}>{Year}</Text>
     </View>
   );
 };
@@ -32,6 +32,6 @@ const estilos = StyleSheet.create({
   enCurso: { backgroundColor: "#eef2ff", borderColor: "#00ff73" },
   titulo: { fontSize: 16, fontWeight: "bold" },
   subtitulo: { fontSize: 14, color: "#555" },
-  anio: { fontSize: 12, color: "#888" },
+  Year: { fontSize: 12, color: "#888" },
   badge: { color: "#6366f1", fontWeight: "bold", fontSize: 12 },
 });

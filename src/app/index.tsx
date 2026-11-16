@@ -10,7 +10,7 @@ const inicio = () => {
     >
       <View style={estilos.avatarContenedor}>
         <Ionicons name="person-circle" size={100} color="#2563eb" />
-        <Text style={estilos.nombre}>Pepito Pérez Gómez</Text>
+        <Text style={estilos.nombre}>Jhon Alex Beltran Herrera</Text>
         <Text style={estilos.profesion}>Tecnólogo en ADSO</Text>
       </View>
 
@@ -19,7 +19,7 @@ const inicio = () => {
         <Text style={estilos.parrafo}>
           Aprendiz del SENA apasionado por el desarrollo de aplicaciones móviles
           y web. Con habilidades en React Native, JavaScript, HTML5, Python y
-          gestión de bases de datos relacionales y no relacionales.
+          gestión de bases de datos relacionales.
         </Text>
       </View>
 
@@ -30,7 +30,7 @@ const inicio = () => {
           nombreIcono="mail"
           colorBoton="#E8D464"
           onPress={() => {
-            Alert.alert("Contacto", "Correo: juan.perez@misena.edu.co");
+            Alert.alert("Contacto", "Correo: jhonalexbeltran2008@gmail");
           }}
         />
       </View>
